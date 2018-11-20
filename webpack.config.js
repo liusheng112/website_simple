@@ -12,7 +12,7 @@ module.exports = {
     entry: './src/app.js',
     output: {
         path: path.resolve(__dirname, dist),
-        filename: 'main-[hash].js'
+        filename: 'main-[hash].js',
     },
     module: {
         rules: [
@@ -20,14 +20,6 @@ module.exports = {
                 test: /\.js|jsx$/,
                 use: 'babel-loader',
                 exclude: /node_modules/
-            },
-            {
-                test: /\.scss$/,
-                use: [
-                    'style-loader',
-                    'css-loader',
-                    'sass-loader'
-                ]
             },
             {
                 test: /\.css$/,
@@ -42,9 +34,17 @@ module.exports = {
                 ]
             },
             {
+                test: /\.scss$/,
+                use: [
+                    { loader: 'style-loader' },
+                    { loader: 'css-loader' },
+                    { loader: 'sass-loader' },
+                ]
+            },
+            {
                 test: /\.(png|svg|jpg|gif|woff|woff2|eot|ttf|otf)$/,
                 use: [
-                    'file-loader'
+                    'file-loader',
                 ]
             }
         ],

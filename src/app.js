@@ -9,11 +9,11 @@ import Footer from './components/Footer/Footer.js';
 class App extends Component {
     render() {
         return (
-            <div>
-                <Navgation/>
-                <RouterIndex/>
+            <div >
+                <Navgation />
+                <RouterIndex />
                 <Footer/>
-            </div>
+            </div >
         );
     }
 }

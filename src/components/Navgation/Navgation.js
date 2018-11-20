@@ -13,7 +13,7 @@ class Navgation extends Component {
                         </Col>
                         <Col xs={9} md={10}>
                             <Nav bsStyle="pills">
-                                <NavItem eventKey={1} className={style.item} href="#">Product</NavItem>
+                                <NavItem eventKey={1} className={style.item} href="/Product">Product</NavItem>
                                 <NavDropdown eventKey={2} title="Docs" id="basic-nav-dropdown">
                                     <MenuItem eventKey={2.1}></MenuItem>
                                     <MenuItem eventKey={2.2}>White paper</MenuItem>

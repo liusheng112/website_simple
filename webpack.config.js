@@ -16,6 +16,17 @@ module.exports = {
         path: path.resolve(__dirname, dist),
         filename: 'main-[hash].js',
     },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                commons: {
+                    name: 'commons',
+                    chunks: 'initial',
+                    minChunks: 2
+                }
+            }
+        }
+    },
     module: {
         rules: [
             {

@@ -5,7 +5,7 @@ const port = 8888;
 const projectRootPath = path.join(__dirname, 'static/dist');
 app.use(express.static(projectRootPath));
 app.use((req, res) => {
-    res.sendFile(projectRootPath + '/index.html');
+    res.sendFile(projectRootPath+'/index.html');
 });
 app.listen(port, () => {
     console.log('app is lstening at port :' + port);

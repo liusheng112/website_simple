@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-// import Navgation from './Navgation/Navgation';
 class Home extends Component {
     render() {
         return (
-            <div>
-                <p>home page</p>
+            <div className="container" style={{ textAlign: 'center' }}>
+                <h1>home page</h1>
             </div>
         );
     }

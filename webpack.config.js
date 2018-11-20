@@ -2,6 +2,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const PurifyCssWebpack = require('purifycss-webpack');
+const glob = require('glob');
 const dist = 'static/dist';
 let htmlWebpackPlugin = new HtmlWebpackPlugin({
     filename: 'index.html',
@@ -62,6 +64,6 @@ module.exports = {
         }),
         // new PurifyCssWebpack({
         //     paths: glob.sync(path.join(__dirname, 'src/*.html'))
-        // })消除冗余css(有问题)
+        // })
     ]
 };

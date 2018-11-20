@@ -13,7 +13,7 @@ class Footer extends Component {
         // const gitHub = require('./images/gitHub.png');
         const tm = require('./images/tm.png');
         return (
-            <div style={{ textAlign: 'center'}}>
+            <div className="container" style={{ textAlign: 'center' }}>
                 <Grid>
                     <Row className="show-grid">
                         <Col xs={1}>

@@ -7,25 +7,16 @@ const glob = require('glob');
 const dist = 'static/dist';
 let htmlWebpackPlugin = new HtmlWebpackPlugin({
     filename: 'index.html',
-    template: path.resolve(__dirname, './src/index.html')
+    template: path.resolve(__dirname, './src/index.html'),
 });
+
+
 module.exports = {
     mode: 'development',
     entry: './src/app.js',
     output: {
         path: path.resolve(__dirname, dist),
         filename: 'main-[hash].js',
-    },
-    optimization: {
-        splitChunks: {
-            cacheGroups: {
-                commons: {
-                    name: 'commons',
-                    chunks: 'initial',
-                    minChunks: 2
-                }
-            }
-        }
     },
     module: {
         rules: [
@@ -35,24 +26,26 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.css$/,
+                test: /\.(sa|sc|c)ss$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    'style-loader',
                     {
-                        loader: 'css-loader',
+                        loader: MiniCssExtractPlugin.loader,
                         options: {
-                            minimize: true
+                            publicPath: '../'
                         }
                     },
-                ]
-            },
-            {
-                test: /\.scss$/,
-                use: [
-                    { loader: 'style-loader' },
-                    { loader: 'css-loader' },
-                    { loader: 'sass-loader' },
-                ]
+                    'css-loader',
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            plugins: (loader) => [
+                                require('autoprefixer')(),
+                            ]
+                        }
+                    },
+                    'sass-loader',
+                ],
             },
             {
                 test: /\.(png|svg|jpg|gif|woff|woff2|eot|ttf|otf)$/,
@@ -62,19 +55,14 @@ module.exports = {
             }
         ],
     },
-    devServer: {
-        contentBase: path.join(__dirname, dist),
-        compress: true,
-        port: 3000,
-    },
     plugins: [
         htmlWebpackPlugin,
-        new CleanWebpackPlugin([dist]),
         new MiniCssExtractPlugin({
-            filename: 'main-[hash].css'
-        }),
+            filename: 'main-[hash].css',
+        }), 
         // new PurifyCssWebpack({
-        //     paths: glob.sync(path.join(__dirname, 'src/*.html'))
-        // })
+        //     paths: glob.sync(path.join(__dirname, './src/*.html')),
+        // }),
+        new CleanWebpackPlugin([dist]),
     ]
 };

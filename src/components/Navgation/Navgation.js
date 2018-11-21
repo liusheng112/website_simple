@@ -5,7 +5,7 @@ class Navgation extends Component {
         const style = require('./Navgation.scss');
         const title = require('./logo2.png');
         return (
-            <div>
+            <div style={{ backgroundColor: '#ffffff', marginTop: '10px', borderColor: '#e7e7e7', height: '50px' }}>
                 <Grid>
                     <Row>
                         <Col xs={4} md={2}>

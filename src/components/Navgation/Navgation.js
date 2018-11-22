@@ -5,7 +5,7 @@ class Navgation extends Component {
         const style = require('./Navgation.scss');
         const title = require('./logo2.png');
         return (
-            <div style={{ backgroundColor: '#ffffff', marginTop: '10px', borderColor: '#e7e7e7', height: '50px' }}>
+            <div className={style.footerRoot}>
                 <Grid>
                     <Row>
                         <Col xs={4} md={2}>
@@ -25,7 +25,7 @@ class Navgation extends Component {
                                 <NavItem eventKey={4} href="/Career">Career</NavItem>
                                 <NavItem eventKey={5} href="#">Explorer</NavItem>
                                 <NavItem eventKey={6} href="#">Medium</NavItem>
-                                <NavItem eventKey={7} href="/Events">Events</NavItem>
+                                <NavItem eventKey={7} href="#">Events</NavItem>
                             </Nav>
                         </Col>
                     </Row>

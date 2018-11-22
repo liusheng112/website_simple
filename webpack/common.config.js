@@ -2,18 +2,15 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const PurifyCssWebpack = require('purifycss-webpack');
-const glob = require('glob');
-const dist = 'static/dist';
+const dist = '../static/dist';
 let htmlWebpackPlugin = new HtmlWebpackPlugin({
     filename: 'index.html',
-    template: path.resolve(__dirname, './src/index.html'),
+    template: path.resolve(__dirname, '../src/index.html'),
 });
-
-
 module.exports = {
-    mode: 'development',
-    entry: './src/app.js',
+    entry: {
+        'main': '../src/app.js'
+    },
     output: {
         path: path.resolve(__dirname, dist),
         filename: 'main-[hash].js',
@@ -28,14 +25,18 @@ module.exports = {
             {
                 test: /\.(sa|sc|c)ss$/,
                 use: [
-                    'style-loader',
+                    {
+                        loader: 'style-loader'
+                    },
                     {
                         loader: MiniCssExtractPlugin.loader,
                         options: {
                             publicPath: '../'
                         }
                     },
-                    'css-loader',
+                    {
+                        loader: 'css-loader'
+                    },
                     {
                         loader: 'postcss-loader',
                         options: {
@@ -44,7 +45,9 @@ module.exports = {
                             ]
                         }
                     },
-                    'sass-loader',
+                    {
+                        loader: 'sass-loader'
+                    },
                 ],
             },
             {
@@ -59,10 +62,7 @@ module.exports = {
         htmlWebpackPlugin,
         new MiniCssExtractPlugin({
             filename: 'main-[hash].css',
-        }), 
-        // new PurifyCssWebpack({
-        //     paths: glob.sync(path.join(__dirname, './src/*.html')),
-        // }),
+        }),
         new CleanWebpackPlugin([dist]),
     ]
 };

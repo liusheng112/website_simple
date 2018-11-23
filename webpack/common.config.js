@@ -1,18 +1,20 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const dist = '../static/dist';
 let htmlWebpackPlugin = new HtmlWebpackPlugin({
     filename: 'index.html',
-    template: path.resolve(__dirname, '../src/index.html'),
-});
-module.exports = {
-    entry: {
-        'main': '../src/app.js'
+    template: path.resolve(__dirname, '../src', 'index.html'),
+    meta: {
+        viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no',
     },
+    favicon: '../static/favicon.ico',
+    inject: true
+});
+
+module.exports = {
+    entry: path.join('../src' + '/app.js'),
     output: {
-        path: path.resolve(__dirname, dist),
+        path: path.join(__dirname, '../static/dist'),
         filename: 'main-[hash].js',
     },
     module: {
@@ -63,6 +65,5 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'main-[hash].css',
         }),
-        new CleanWebpackPlugin([dist]),
     ]
 };

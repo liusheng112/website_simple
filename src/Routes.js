@@ -1,9 +1,9 @@
 import { Switch, Route } from 'react-router-dom';
 import React, { Component } from 'react';
-import Team from '../Team/Team.js';
-import Home from '../Home/Home.js';
-import NotFound from '../NotFound/NotFound.js';
-import Product from '../Product/Product.js';
+import Team from './components/Team/Team.js';
+import Home from './components/Home/Home.js';
+import NotFound from './components/NotFound/NotFound.js';
+import Product from './components/Product/Product.js';
 class RouterIndex extends Component {
     render() {
         return (

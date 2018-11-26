@@ -1,13 +1,17 @@
-.footerRoot{
-    margin-top: 10px;
+.Root{
     background: #ffffff;
     border-color: #e7e7e7;
-    -webkit-box-shadow: 0px 0px 0px 3px rgba(20, 27, 45, 0.08);
-    height: 50px;
-    img{
-        float: right;
+    box-shadow: 0px 3px 12px 0px rgba(20, 27, 45, 0.08);
+    -webkit-box-shadow: 0px 3px 12px 0px rgba(20, 27, 45, 0.08);
+    -moz-box-shadow: 0px 3px 12px 0px rgba(20, 27, 45, 0.08);
+    .NavItem{
+        margin-left: 20px;
+        margin-right: 20px
     }
-    a:hover {
-        text-decoration:underline;
+    .NavItem:hover{
+        border-bottom: 3px solid #296de9;
+        text-decoration: none;
+        color: #353b47;
+        font-weight: bold;
     }
 }

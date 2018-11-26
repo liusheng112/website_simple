@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 class Home extends Component {
     render() {
         // const styles = require('./Home.scss');
-        const logo = require('./images/logo.png');
-        const logo2 = require('./images/icoLoho2.png');
-        const nav = require('./images/nav1.png');
-        const github = require('./images/github.png');
-        const github2 = require('./images/icoLog4.png');
-
+        // const logo = require('./images/logo.png');
+        // const logo2 = require('./images/icoLoho2.png');
+        // const nav = require('./images/nav1.png');
+        // const github = require('./images/github.png');
+        // const github2 = require('./images/icoLog4.png');
         const videpIco = require('./images/videoIco.png');
         const Telegram = require('./images/Telegram.png');
         const Reddit = require('./images/Reddit.png');
@@ -15,8 +14,8 @@ class Home extends Component {
         const Discord = require('./images/Discord.png');
         const Facebook = require('./images/Facebook.png');
         return (
-            <div className="container" style={{ height: '800px', width: '100%', backgroundSize: 'cover' }}>
-                <div>
+            <div>
+                <div className="container" style={{ height: '800px', width: '100%', backgroundSize: 'cover',marginTop:'20px'}}>
                     <div>
                         <p>WANCHAIN 2.0 IS LIVE</p>
                         <div>
@@ -26,7 +25,7 @@ class Home extends Component {
                         <p>THE WORLD'S <span>FIRST AND ONLY</span> INTEROPERABLE BLOCKCHAIN </p>
                         <p>WITH SECURE MULTI-PARTY COMPUTING</p>
                     </div>
-                    <div id="link">
+                    <div id="link" style={{float:'left'}}>
                         <span>WATCH VIDEO</span>
                         <img src={videpIco} />
                     </div>

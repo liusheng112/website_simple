@@ -1,35 +1,57 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import {
+    Collapse, Navbar, Nav,
+    NavbarBrand, NavItem,
+    NavLink, UncontrolledDropdown,
+    DropdownToggle, DropdownMenu,
+    DropdownItem, Row, Col
+} from 'reactstrap';
+import './Navgation.scss';
 class Navgation extends Component {
     render() {
-        const style = require('./Navgation.scss');
         const title = require('./logo2.png');
         return (
-            <div className={style.footerRoot}>
-                <Grid>
-                    <Row>
-                        <Col xs={4} md={2}>
-                            <a href='/'><img src={title}></img></a>
-                        </Col>
-                        <Col xs={9} md={10}>
-                            <Nav bsStyle="pills">
-                                <NavItem eventKey={1} className={style.item} href="/Product">Product</NavItem>
-                                <NavDropdown eventKey={2} title="Docs" id="basic-nav-dropdown">
-                                    <MenuItem eventKey={2.1}></MenuItem>
-                                    <MenuItem eventKey={2.2}>White paper</MenuItem>
-                                    <MenuItem eventKey={2.3}>Yellow paper</MenuItem>
-                                    <MenuItem eventKey={2.4}>Commercial paper</MenuItem>
-                                    <MenuItem eventKey={2.5}>Wanchain docs</MenuItem>
-                                </NavDropdown>
-                                <NavItem eventKey={3} href="/Team">Team</NavItem>
-                                <NavItem eventKey={4} href="/Career">Career</NavItem>
-                                <NavItem eventKey={5} href="#">Explorer</NavItem>
-                                <NavItem eventKey={6} href="#">Medium</NavItem>
-                                <NavItem eventKey={7} href="#">Events</NavItem>
-                            </Nav>
-                        </Col>
-                    </Row>
-                </Grid>
+            <div className='Root'>
+                <Row>
+                    <Col sm={{ size: 8, order: 2, offset: 1 }}>
+                        <Navbar color="#ffffff" light expand="md">
+                            <NavbarBrand href="/"><img src={title}></img></NavbarBrand>
+                            <Collapse navbar>
+                                <Nav className="ml-auto" navbar>
+                                    <NavItem className='NavItem'>
+                                        <NavLink href="/Product">Product</NavLink>
+                                    </NavItem>
+                                    <UncontrolledDropdown nav inNavbar>
+                                        <DropdownToggle className='NavItem' nav caret>
+                                            Docs
+                                        </DropdownToggle>
+                                        <DropdownMenu right style={{ background: 'none', border: 'none',left:'-44px' }}>
+                                            <DropdownItem className='NavItem'>White paper</DropdownItem>
+                                            <DropdownItem className='NavItem'>Yellow paper</DropdownItem>
+                                            <DropdownItem className='NavItem'>Commercial<br />paper</DropdownItem>
+                                            <DropdownItem className='NavItem'>Wanchain<br />docs</DropdownItem>
+                                        </DropdownMenu>
+                                    </UncontrolledDropdown>
+                                    <NavItem className='NavItem' >
+                                        <NavLink href="/Team">Team</NavLink>
+                                    </NavItem>
+                                    <NavItem  className='NavItem'>
+                                        <NavLink href="/Career">Career</NavLink>
+                                    </NavItem>
+                                    <NavItem className='NavItem'>
+                                        <NavLink href="#">Explorer</NavLink>
+                                    </NavItem>
+                                    <NavItem className='NavItem'>
+                                        <NavLink href="#">Medium</NavLink>
+                                    </NavItem>
+                                    <NavItem className='NavItem'>
+                                        <NavLink href="/Events">Events</NavLink>
+                                    </NavItem>
+                                </Nav>
+                            </Collapse>
+                        </Navbar>
+                    </Col>
+                </Row>
             </div>
         );
     }

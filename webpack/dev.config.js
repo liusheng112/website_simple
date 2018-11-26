@@ -5,7 +5,7 @@ module.exports = merge(common, {
     devtool: 'cheap-source-map',
     devServer: {
         contentBase: './static/dist',
-        port: 8888,
+        port: 3000,
         historyApiFallback: true
     }
 });

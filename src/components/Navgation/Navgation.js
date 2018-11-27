@@ -21,28 +21,34 @@ class Navgation extends Component {
                                     <NavItem className='NavItem'>
                                         <NavLink href="/Product">Product</NavLink>
                                     </NavItem>
-                                    <UncontrolledDropdown nav inNavbar>
-                                        <DropdownToggle className='NavItem' nav caret>
-                                            Docs
-                                        </DropdownToggle>
-                                        <DropdownMenu right style={{ background: 'none', border: 'none',left:'-44px' }}>
-                                            <DropdownItem className='NavItem'>White paper</DropdownItem>
-                                            <DropdownItem className='NavItem'>Yellow paper</DropdownItem>
-                                            <DropdownItem className='NavItem'>Commercial<br />paper</DropdownItem>
-                                            <DropdownItem className='NavItem'>Wanchain<br />docs</DropdownItem>
+                                    <UncontrolledDropdown nav inNavbar className='navDropdown'>
+                                        <DropdownToggle className='NavItem' nav caret>Docs</DropdownToggle>
+                                        <DropdownMenu right className='navDropdown-content'>
+                                            <DropdownItem className='NavItem'>
+                                                White paper
+                                            </DropdownItem>
+                                            <DropdownItem className='NavItem'>
+                                                Yellow paper
+                                            </DropdownItem>
+                                            <DropdownItem className='NavItem'>
+                                                Commercial<br/>paper
+                                            </DropdownItem>
+                                            <DropdownItem className='NavItem'>
+                                                Wanchain<br/>docs
+                                            </DropdownItem>
                                         </DropdownMenu>
                                     </UncontrolledDropdown>
                                     <NavItem className='NavItem' >
                                         <NavLink href="/Team">Team</NavLink>
                                     </NavItem>
-                                    <NavItem  className='NavItem'>
+                                    <NavItem className='NavItem'>
                                         <NavLink href="/Career">Career</NavLink>
                                     </NavItem>
                                     <NavItem className='NavItem'>
-                                        <NavLink href="#">Explorer</NavLink>
+                                        <NavLink href="https://www.wanscan.org" target="_blank">Explorer</NavLink>
                                     </NavItem>
                                     <NavItem className='NavItem'>
-                                        <NavLink href="#">Medium</NavLink>
+                                        <NavLink href="https://medium.com/wanchain-foundation" target="_blank">Medium</NavLink>
                                     </NavItem>
                                     <NavItem className='NavItem'>
                                         <NavLink href="/Events">Events</NavLink>

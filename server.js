@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const compression = require('compression');
 const app = express();
-const port = 3000;
+const port = 8888;
 const projectRootPath = path.join(__dirname, 'static', 'dist');
 
 app.use(compression());

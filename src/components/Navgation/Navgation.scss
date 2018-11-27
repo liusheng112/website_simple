@@ -14,4 +14,18 @@
         color: #353b47;
         font-weight: bold;
     }
+    .navDropdown{ 
+        background: none;
+        position: relative;
+        display: inline-block;
+    }
+    .navDropdown:hover .navDropdown-content{
+        display: block;
+    }
+    .navDropdown-content{
+        background: none;
+        border: none;
+        left:-44px;
+        text-align:center;
+    }
 }

@@ -27,16 +27,18 @@
         margin: 70px 0 50px;
         tr th{ 
             font-size: 16px; 
-            height: 45px; 
+            height: 45px;
             font-weight: normal; 
             border-bottom: solid 2px #f6f6f6; 
             text-transform: uppercase;
-            a{ color: #1483ff;}
         }
-        tr td{ 
+        tr td{
             font-size: 14px;
             color: #688499; 
             height: 60px;
+            a{ 
+                color: #1483ff;
+            }
         }
         tr:hover td{ color: #1483ff;}
     }

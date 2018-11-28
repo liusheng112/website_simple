@@ -1,7 +1,31 @@
-.footerRoot{
+.back{
     background: #1e2736;
-    width:100%;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    height: 190px;
+    .page{
+        margin-top: 60px;
+        .item{
+            width:50px;
+            float: left;
+            margin-left: 10px;
+            margin-right: 10px;
+            span{
+                font-size: 12px;
+                color: #999;
+            }
+            .github{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+.end{
+    background: #2b3139;
+    text-align: center;
+    height:30px;
+    h6{
+        padding:5px;
+        color:#999;
+        font-size:12px;
+    }
 }

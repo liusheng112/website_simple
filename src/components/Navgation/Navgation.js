@@ -19,7 +19,7 @@ class Navgation extends Component {
                             <Collapse navbar>
                                 <Nav className="ml-auto" navbar>
                                     <NavItem className='NavItem'>
-                                        <NavLink href="/Product">Product</NavLink>
+                                        <NavLink href="/product">Product</NavLink>
                                     </NavItem>
                                     <UncontrolledDropdown nav inNavbar className='navDropdown'>
                                         <DropdownToggle className='NavItem' nav caret>Docs</DropdownToggle>
@@ -39,10 +39,10 @@ class Navgation extends Component {
                                         </DropdownMenu>
                                     </UncontrolledDropdown>
                                     <NavItem className='NavItem' >
-                                        <NavLink href="/Team">Team</NavLink>
+                                        <NavLink href="/about">Team</NavLink>
                                     </NavItem>
                                     <NavItem className='NavItem'>
-                                        <NavLink href="/Career">Career</NavLink>
+                                        <NavLink href="/career">Career</NavLink>
                                     </NavItem>
                                     <NavItem className='NavItem'>
                                         <NavLink href="https://www.wanscan.org" target="_blank">Explorer</NavLink>
@@ -51,7 +51,7 @@ class Navgation extends Component {
                                         <NavLink href="https://medium.com/wanchain-foundation" target="_blank">Medium</NavLink>
                                     </NavItem>
                                     <NavItem className='NavItem'>
-                                        <NavLink href="/Events">Events</NavLink>
+                                        <NavLink href="/events">Events</NavLink>
                                     </NavItem>
                                 </Nav>
                             </Collapse>

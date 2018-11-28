@@ -10,12 +10,12 @@ class RouterIndex extends Component {
     render() {
         return (
             <Switch>
-                <Route exact path="/" component={Home}></Route>
-                <Route path="/Team" component={Team}></Route>
-                <Route path="/Product" component={Product}></Route>
-                <Route path="/Events" component={Events}></Route> 
-                <Route path="/Career" component={Career}></Route> 
-                <Route path="*" component={NotFound}></Route>
+                <Route exact path='/' component={Home}></Route>
+                <Route path='/about' component={Team}></Route>
+                <Route path='/product' component={Product}></Route>
+                <Route path='/events' component={Events}></Route> 
+                <Route path='/career' component={Career}></Route> 
+                <Route path='*' component={NotFound}></Route>
             </Switch>
         );
     }

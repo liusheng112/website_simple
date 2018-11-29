@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import './Home.scss';
 class Home extends Component {
     render() {
-        // const styles = require('./Home.scss');
         // const logo = require('./images/logo.png');
         // const logo2 = require('./images/icoLoho2.png');
         // const nav = require('./images/nav1.png');
@@ -15,7 +15,7 @@ class Home extends Component {
         const Facebook = require('./images/Facebook.png');
         return (
             <div>
-                <div className="container" style={{ height: '800px', width: '100%', backgroundSize: 'cover',marginTop:'20px'}}>
+                <div style={{ height: '800px', width: '100%', backgroundSize: 'cover',marginTop:'20px'}}>
                     <div>
                         <p>WANCHAIN 2.0 IS LIVE</p>
                         <div>

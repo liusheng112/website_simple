@@ -12,8 +12,8 @@ class Team extends Component {
                 <h4 className='aboutH4'>{item.title}</h4>
                 <h4 className='aboutH4'><small>{item.position}</small></h4>
                 {item.url ? <a className='icoA' href={item.url} target="_blank">{item.url.startsWith(isLinkedIn) ? <em className='linkIn'></em> : <em className='linkOther'></em>}</a> : ''}
-            </Col>)
-        );
+            </Col>
+        ));
         const advisory = dataAdvisoryEn.map((item, index) => (
             <Col sm='3' key={index} className='aboutTitleDiv'>
                 <img src={item.img} className='title'></img>
@@ -23,7 +23,7 @@ class Team extends Component {
             </Col>
         ));
         return (
-            <div className="container" style={{ textAlign: 'center' }}>
+            <div style={{ textAlign: 'center' }}>
                 <div className='aboutTeam'>
                     <h1>Leadership Team</h1>
                     <Row>{leader}</Row>

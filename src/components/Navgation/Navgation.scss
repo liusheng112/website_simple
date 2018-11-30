@@ -6,7 +6,10 @@
     -moz-box-shadow: 0px 3px 12px 0px rgba(20, 27, 45, 0.08);
     .NavItem{
         margin-left: 20px;
-        margin-right: 20px
+        margin-right: 20px;
+        background-color: #ffffff;
+        border: none;
+        color: rgba(0, 0, 0, 0.5);
     }
     .NavItem:hover{
         border-bottom: 3px solid #296de9;
@@ -15,7 +18,7 @@
         font-weight: bold;
     }
     .navDropdown{ 
-        background: none;
+        // background: none;
         position: relative;
         display: inline-block;
     }

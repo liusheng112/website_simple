@@ -1,13 +1,27 @@
 import React, { Component } from 'react';
 import {
     Collapse, Navbar, Nav,
-    NavbarBrand, NavItem,
-    NavLink, UncontrolledDropdown,
+    NavbarBrand, NavItem, Dropdown,
+    NavLink,
     DropdownToggle, DropdownMenu,
     DropdownItem, Row, Col
 } from 'reactstrap';
 import './Navgation.scss';
 class Navgation extends Component {
+    constructor(props) {
+        super(props);
+
+        this.toggle = this.toggle.bind(this);
+        this.state = {
+            dropdownOpen: false
+        };
+    }
+
+    toggle() {
+        this.setState({
+            dropdownOpen: !this.state.dropdownOpen
+        });
+    }
     render() {
         const title = require('./logo2.png');
         return (
@@ -21,8 +35,8 @@ class Navgation extends Component {
                                     <NavItem className='NavItem'>
                                         <NavLink href="/product">Product</NavLink>
                                     </NavItem>
-                                    <UncontrolledDropdown nav inNavbar className='navDropdown'>
-                                        <DropdownToggle className='NavItem' nav caret>Docs</DropdownToggle>
+                                    <Dropdown className='navDropdown' data-toggle="dropdown" toggle={this.toggle}>
+                                        <DropdownToggle className='NavItem' onMouseOver={this.toggle} aria-expanded={this.state.dropdownOpen}>Docs</DropdownToggle>
                                         <DropdownMenu right className='navDropdown-content'>
                                             <DropdownItem className='NavItem'>
                                                 White paper
@@ -31,13 +45,13 @@ class Navgation extends Component {
                                                 Yellow paper
                                             </DropdownItem>
                                             <DropdownItem className='NavItem'>
-                                                Commercial<br/>paper
+                                                Commercial<br />paper
                                             </DropdownItem>
                                             <DropdownItem className='NavItem'>
-                                                Wanchain<br/>docs
+                                                Wanchain<br />docs
                                             </DropdownItem>
                                         </DropdownMenu>
-                                    </UncontrolledDropdown>
+                                    </Dropdown>
                                     <NavItem className='NavItem' >
                                         <NavLink href="/about">Team</NavLink>
                                     </NavItem>

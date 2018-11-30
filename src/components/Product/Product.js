@@ -137,7 +137,7 @@ class Product extends Component {
                 </div>
                 <div>
                     <Row>
-                        <Col sm={{ size: 5, offset: 1 }}>
+                        <Col sm={{ size: 4, offset: 1 }}>
                             <div className='whiteLeft'>
                                 <div><img className='proimg3' src={proimg3} /></div>
                             </div></Col>

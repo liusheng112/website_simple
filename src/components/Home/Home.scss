@@ -1,5 +1,89 @@
-.container{
+
+  .homeDiv {
+    background: url("./images/banner.jpg");
+    background-size: cover;
     height: 800px;
-    width: 100%;
-    background-size: cover
-}
+    position: relative;
+    .homeHeaderBodyDiv1{
+        width:1300px!important;
+        height:451px;
+        margin-left: -30px;
+      }
+    .bannerTitle{
+        margin-top: 240px;
+        font-family: MicrosoftYaHei-Bold;
+          font-size: 50px;
+          font-weight: bold;
+          font-stretch: normal;
+          line-height: 10px;
+          letter-spacing: 2px;
+          color: #ffffff;
+      }
+      .bannerLine{
+        margin: 35px 0;
+        display: inline-block;
+        span{
+          width: 20px;
+          height: 3px;
+          display: inline-block;
+        //   float: left;
+        }
+        .greenLine{
+          background: #2AB3AB;
+          margin-right: 4px;
+        }
+        .blueLine{
+          background: #368AF6;
+        }
+      }
+      .bannertextP{
+        font-family: MicrosoftYaHei;
+          font-size: 16px;
+          font-weight: normal;
+          letter-spacing: 1px;
+          color: #AFBADC;
+        padding: 0;
+        .bannertextSpan{
+          font-weight: bold;
+          color: #fff;
+          font-size:24px;
+        }
+      }
+      .bannerShare{
+        display: block;
+        text-align: left;
+        margin: 50px 0 0 0;
+        img{
+          display: inline-block;
+          margin: 20px 20px 20px 0;
+          opacity: 0.6;
+          width:21px;
+        }
+        p{
+          font-size: 14px;
+          padding-top: 0;
+        }
+        img:hover{
+          opacity: 1;
+        }
+      }
+   }
+  
+  .videoBtn:hover{
+    background-image: linear-gradient(to right, #00AEFF, #3680F8);
+  }
+  .videoBtn{
+    color: #fff;
+    float: left;
+    width:190px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    margin: 45px 40px 0 0;
+    font-size:16px;
+    font-weight: bold;
+    border-radius:25px;
+    background-image: linear-gradient(to right, #3680F8, #00AEFF);
+  }
+ 

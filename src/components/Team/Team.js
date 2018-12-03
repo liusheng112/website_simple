@@ -24,11 +24,11 @@ class Team extends Component {
         ));
         return (
             <div style={{ textAlign: 'center' }}>
-                <div className='aboutTeam'>
+                <div className='aboutTeam container'>
                     <h1>Leadership Team</h1>
                     <Row>{leader}</Row>
                 </div>
-                <div className='aboutTeam'>
+                <div className='aboutTeam container'>
                     <h1>Advisory Group</h1>
                     <Row>{advisory}</Row>
                 </div>

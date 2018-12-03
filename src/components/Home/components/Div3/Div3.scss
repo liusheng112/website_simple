@@ -1,0 +1,48 @@
+.videoBtn:hover{
+    background-image: linear-gradient(to right, #00AEFF, #3680F8);
+  }
+  .videoBtn{
+    color: #fff;
+    float: left;
+    width:190px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    margin: 45px 40px 0 0;
+    font-size:16px;
+    font-weight: bold;
+    border-radius:25px;
+    background-image: linear-gradient(to right, #3680F8, #00AEFF);
+    box-shadow: 0px 6px 24px 0px rgba(25, 145, 252, 0.4);
+  }
+  .videpIco{
+    display: inline;
+    margin: 0 0 0 8px!important;
+    padding: 0!important;
+  }
+  .root{
+    text-align: center;
+    hr{
+      width:20px;
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+   
+  }
+.contentImg{
+  width: 574px;
+  height: 624px; 
+  float: right 
+}
+h2{
+  // margin: 0;
+  // padding: 80px 0 0 0;
+  margin-top: 50px;
+  font-family: "Microsoft YaHei";
+  font-size: 24px;
+  text-align: center;
+  color: #2c313a;
+}

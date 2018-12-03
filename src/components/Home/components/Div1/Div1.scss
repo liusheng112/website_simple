@@ -6,20 +6,25 @@
       font-size: 24px;
       text-align: center;
       color: #2c313a;
+      margin-bottom: 50px;
     }
 
     .div1HeaderImg{
-      span{
-        font-family: MicrosoftYaHei-Bold;
-      	font-size: 24px;
-      	font-weight: normal;
-      	font-stretch: normal;
-      	line-height: 14px;
-      	letter-spacing: 1px;
-      	color: #2b363d;
-      }
+      width:20px;
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-left: 5px;
+      margin-right: 5px;
     }
-
+    span{
+      font-family: MicrosoftYaHei-Bold;
+      font-size: 24px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 14px;
+      letter-spacing: 1px;
+      color: #2b363d;
+    }
     .div1HeaderImg2{
       float: left;
       img{
@@ -33,7 +38,7 @@
     text-align: center;
     .wLeftImg{
       width:445px;
-    height:471px;
+      height:471px;
     }
   }
   .vision{
@@ -43,6 +48,5 @@
     }
     p{
       text-align: -webkit-match-parent;
-    }
-   
+    }   
   }

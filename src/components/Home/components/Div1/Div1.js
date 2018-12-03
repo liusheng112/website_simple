@@ -11,7 +11,7 @@ class Div1 extends Component {
         const vision3 = require('../../images/vision3.png');
         const vision4 = require('../../images/vision4.png');
         return (
-            <div>
+            <div style={{ marginBottom: '60px' }}>
                 <div className='div1Header'>
                     <h2>
                         <hr className='div1HeaderImg' />
@@ -23,7 +23,7 @@ class Div1 extends Component {
                     <Col xs='6' className='wLeft'>
                         <img src={div1EnPc} className='wLeftImg'></img>
                     </Col>
-                    <Col xs='6'>
+                    <Col xs='5'>
                         <Row>
                             <Col xs='5' className='vision'>
                                 <img src={vision1} />

@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
 import Div1 from './components/Div1/Div1';
+import Div2 from './components/Div2/Div2';
+import Div3 from './components/Div3/Div3';
+import Div4 from './components/Div4/Div4';
+import Div5 from './components/Div5/Div5';
+import Div6 from './components/Div6/Div6';
 import './Home.scss';
 class Home extends Component {
     render() {
@@ -44,6 +49,11 @@ class Home extends Component {
                     </Row>         
                 </div>
                 <Div1/>
+                <Div2/>
+                <Div3/>
+                <Div4/>
+                <Div5/>
+                <Div6/>
             </div>
         );
     }

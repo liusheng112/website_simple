@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import {
-    Collapse, Navbar, Nav,
-    NavbarBrand, NavItem, Dropdown,
-    NavLink,
+    Collapse, Navbar, NavbarBrand,
+    NavItem, Dropdown, Row, Nav,
     DropdownToggle, DropdownMenu,
-    DropdownItem, Row, Col
+    DropdownItem, NavLink, Col
 } from 'reactstrap';
 import './Navgation.scss';
 class Navgation extends Component {
@@ -27,45 +26,47 @@ class Navgation extends Component {
         return (
             <div className='Root'>
                 <Row>
-                    <Col sm={{ size: 8, order: 2, offset: 1 }}>
-                        <Navbar color="#ffffff" light expand="md">
-                            <NavbarBrand href="/"><img src={title}></img></NavbarBrand>
+                    <Col sm={{ size: 6, order: 2, offset: 1 }}>
+                        <Navbar light expand="md">
+                            <NavbarBrand href='/' className='title'><img src={title}></img></NavbarBrand>
                             <Collapse navbar>
-                                <Nav className="ml-auto" navbar>
+                                <Nav className='ml-auto' navbar>
                                     <NavItem className='NavItem'>
-                                        <NavLink href="/product">Product</NavLink>
+                                        <NavLink href='/product'>Product</NavLink>
                                     </NavItem>
-                                    <Dropdown className='navDropdown' data-toggle="dropdown" toggle={this.toggle}>
-                                        <DropdownToggle className='NavItem' onMouseOver={this.toggle} aria-expanded={this.state.dropdownOpen}>Docs</DropdownToggle>
+                                    <Dropdown className='navDropdown' data-toggle='dropdown' toggle={this.toggle}>
+                                        <DropdownToggle className='NavItem' onMouseOver={this.toggle} aria-expanded={this.state.dropdownOpen}>
+                                            Docs
+                                        </DropdownToggle>
                                         <DropdownMenu right className='navDropdown-content'>
-                                            <DropdownItem className='NavItem'>
-                                                White paper
+                                            <DropdownItem className='NavItem' target='_blank'>
+                                                White&nbsp;paper
                                             </DropdownItem>
-                                            <DropdownItem className='NavItem'>
-                                                Yellow paper
+                                            <DropdownItem className='NavItem' target='_blank'>
+                                                Yellow&nbsp;paper
                                             </DropdownItem>
-                                            <DropdownItem className='NavItem'>
+                                            <DropdownItem className='NavItem' target='_blank'>
                                                 Commercial<br />paper
                                             </DropdownItem>
-                                            <DropdownItem className='NavItem'>
+                                            <DropdownItem className='NavItem' target='_blank' href='http://www.wanchaindocs.org/en/latest/'>
                                                 Wanchain<br />docs
                                             </DropdownItem>
                                         </DropdownMenu>
                                     </Dropdown>
                                     <NavItem className='NavItem' >
-                                        <NavLink href="/about">Team</NavLink>
+                                        <NavLink href='/about'>Team</NavLink>
                                     </NavItem>
                                     <NavItem className='NavItem'>
-                                        <NavLink href="/career">Career</NavLink>
+                                        <NavLink href='/career'>Career</NavLink>
                                     </NavItem>
                                     <NavItem className='NavItem'>
-                                        <NavLink href="https://www.wanscan.org" target="_blank">Explorer</NavLink>
+                                        <NavLink href='https://www.wanscan.org' target='_blank'>Explorer</NavLink>
                                     </NavItem>
                                     <NavItem className='NavItem'>
-                                        <NavLink href="https://medium.com/wanchain-foundation" target="_blank">Medium</NavLink>
+                                        <NavLink href='https://medium.com/wanchain-foundation' target='_blank'>Medium</NavLink>
                                     </NavItem>
                                     <NavItem className='NavItem'>
-                                        <NavLink href="/events">Events</NavLink>
+                                        <NavLink href='/events'>Events</NavLink>
                                     </NavItem>
                                 </Nav>
                             </Collapse>

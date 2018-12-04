@@ -10,7 +10,7 @@ class Div2 extends Component {
         const pot = require('../../images/pot.png');
         const widthL = { width: '380px' };
         return (
-            <div className='div1o'>
+            <div className='div2Root'>
                 <div className='div1oHeaderEn container'>
                     <h2>
                         <hr className='div1HeaderImg' />
@@ -21,21 +21,21 @@ class Div2 extends Component {
                         <div style={widthL} className='div1oBodyCard' id='card1'>
                             <div className='div1oBodyCardModule'>
                                 <p className='p'>
-                                    <img src={card1} id="div1oimg1" />
+                                    <img src={card1} id='div1oimg1' />
                                 </p>
                                 <p><small>Decentralized</small><br /> Exchange</p>
                             </div>
                             <img className='div1oBodyCardLine' src={divo1Line} />
                             <ul>
-                                <img src={pot} /><li className='li'>Exchange the world's digital assets on-chain</li>
-                                <img src={pot} /><li className='li'>Transact using Wanchain's multi-asset wallet</li>
-                                <img src={pot} /><li className='li'>Build decentralized exchange applications with protocol tokens</li>
+                                <img src={pot} /><li>Exchange the world's digital assets on-chain</li>
+                                <img src={pot} /><li>Transact using Wanchain's multi-asset wallet</li>
+                                <img src={pot} /><li>Build decentralized exchange applications with protocol tokens</li>
                             </ul>
                         </div>
                         <div style={widthL} className='div1oBodyCard'>
                             <div className='div1oBodyCardModule'>
                                 <p className='p'>
-                                    <img src={card2} id="div1oimg2" />
+                                    <img src={card2} id='div1oimg2' />
                                 </p>
                                 <p><small>Asset</small><br />Management Tools</p>
                             </div>
@@ -50,7 +50,7 @@ class Div2 extends Component {
                         <div style={widthL} className='div1oBodyCard' id='card4'>
                             <div className='div1oBodyCardModule'>
                                 <p className='p'>
-                                    <img src={card3} id="div1oimg4" />
+                                    <img src={card3} id='div1oimg4' />
                                 </p>
                                 <p id='div1oP4'><small>Cross-chain</small><br />dApps</p>
                             </div>

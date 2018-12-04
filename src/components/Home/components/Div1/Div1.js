@@ -11,7 +11,7 @@ class Div1 extends Component {
         const vision3 = require('../../images/vision3.png');
         const vision4 = require('../../images/vision4.png');
         return (
-            <div style={{ marginBottom: '60px' }}>
+            <div className='div1Root'>
                 <div className='div1Header'>
                     <h2>
                         <hr className='div1HeaderImg' />

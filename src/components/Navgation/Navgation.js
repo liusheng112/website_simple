@@ -27,7 +27,7 @@ class Navgation extends Component {
             <div className='Root'>
                 <Row>
                     <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                        <Navbar light expand="md">
+                        <Navbar light expand='md'>
                             <NavbarBrand href='/' className='title'><img src={title}></img></NavbarBrand>
                             <Collapse navbar>
                                 <Nav className='ml-auto' navbar>
@@ -35,7 +35,7 @@ class Navgation extends Component {
                                         <NavLink href='/product'>Product</NavLink>
                                     </NavItem>
                                     <Dropdown className='navDropdown' data-toggle='dropdown' toggle={this.toggle}>
-                                        <DropdownToggle className='NavItem' onMouseOver={this.toggle} aria-expanded={this.state.dropdownOpen}>
+                                        <DropdownToggle className='NavItem' onMouseOver={this.toggle}>
                                             Docs
                                         </DropdownToggle>
                                         <DropdownMenu right className='navDropdown-content'>

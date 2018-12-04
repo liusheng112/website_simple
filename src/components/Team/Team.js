@@ -11,7 +11,7 @@ class Team extends Component {
                 <img src={item.img} className='title'></img>
                 <h4 className='aboutH4'>{item.title}</h4>
                 <h4 className='aboutH4'><small>{item.position}</small></h4>
-                {item.url ? <a className='icoA' href={item.url} target="_blank">{item.url.startsWith(isLinkedIn) ? <em className='linkIn'></em> : <em className='linkOther'></em>}</a> : ''}
+                {item.url ? <a className='icoA' href={item.url} target='_blank'>{item.url.startsWith(isLinkedIn) ? <em className='linkIn'></em> : <em className='linkOther'></em>}</a> : ''}
             </Col>
         ));
         const advisory = dataAdvisoryEn.map((item, index) => (
@@ -19,7 +19,7 @@ class Team extends Component {
                 <img src={item.img} className='title'></img>
                 <h4 className='aboutH4'>{item.title}</h4>
                 <h4 className='aboutH4'><small>{item.position}</small></h4>
-                {item.url ? <a className='icoA' href={item.url} target="_blank">{item.url.startsWith(isLinkedIn) ? <em className='linkIn'></em> : <em className='linkOther'></em>}</a> : ''}
+                {item.url ? <a className='icoA' href={item.url} target='_blank'>{item.url.startsWith(isLinkedIn) ? <em className='linkIn'></em> : <em className='linkOther'></em>}</a> : ''}
             </Col>
         ));
         return (

@@ -7,13 +7,13 @@ class Div5 extends Component {
         const part2 = require('../../images/pt2.png');
         const part3 = require('../../images/pt3.png');
         return (
-            <div className='officalModule'>
+            <div className='div5Root'>
                 <div className='comBgWhite'>
                     <div className='officalModule3'>
-                        <div className="container">
+                        <div className='container'>
                             <Row>
                                 <Col xs='4'>
-                                    <img src={part1} id="div3img1" /></Col>
+                                    <img src={part1} id='div3img1' /></Col>
                                 <Col xs='8'>
                                     <div className='officalModule3Div'>
                                         <h2>PRIVATE</h2>
@@ -32,7 +32,7 @@ class Div5 extends Component {
                     </div>
                 </div>
                 <div className='officalModule4'>
-                    <div className="container">
+                    <div className='container'>
                         <Row>
                             <Col xs='8'>
                                 <div className='officalModule4Div'>
@@ -45,19 +45,18 @@ class Div5 extends Component {
                                 </div>
                             </Col>
                             <Col xs='4'>
-                                <img src={part2} id="div3img2" />
+                                <img src={part2} id='div3img2' />
                             </Col>
                         </Row>
                     </div>
                 </div>
                 <div className='comBgWhite'>
                     <div className='officalModule3'>
-                        <div className="container">
-
+                        <div className='container'>
                             <Row>
-                                <Col xs='4'><img src={part3} id="div3img3" /></Col>
+                                <Col xs='4'><img src={part3} id='div3img3' /></Col>
                                 <Col xs='8'>
-                                    <div className='officalModule3Div' id="officalModule3Div2">
+                                    <div className='officalModule3Div' id='officalModule3Div2'>
                                         <h2>SMART CONTRACTS</h2>
                                         <p>Wanchain's blockchain builds upon the strengths and robustness of Ethereum. Any Ethereum Dapp will run on Wanchain with zero code changes, yet, applications can be enhanced with Wanchain's APIs to leverage privacy protection and cross-chain capabilities</p>
                                         <ul>
@@ -68,7 +67,6 @@ class Div5 extends Component {
                                     </div>
                                 </Col>
                             </Row>
-
                         </div>
                     </div>
                 </div>

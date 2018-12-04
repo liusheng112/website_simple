@@ -6,8 +6,8 @@ class Div6 extends Component {
         const down = require('../../images/down1.png');
         const up = require('../../images/up1.png');
         return (
-            <div className='div5Header'>
-                <div className='div5HeaderDiv container'>
+            <div className='div6Root'>
+                <div className='div6HeaderDiv container'>
                     <h2><hr className='div1HeaderImg' />ROADMAP<hr className='div1HeaderImg' /></h2>
                 </div>
                 <div className='container'>

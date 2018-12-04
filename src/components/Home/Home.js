@@ -9,18 +9,11 @@ import Div6 from './components/Div6/Div6';
 import './Home.scss';
 class Home extends Component {
     render() {
-        // const logo = require('./images/logo.png');
-        // const logo2 = require('./images/icoLoho2.png');
-        // const nav = require('./images/nav1.png');
-        // const github = require('./images/github.png');
-        // const github2 = require('./images/icoLog4.png');
-        // const videpIco = require('./images/videoIco.png');
         const Telegram = require('./images/Telegram.png');
         const Reddit = require('./images/Reddit.png');
         const Twitter = require('./images/Twitter.png');
         const Discord = require('./images/Discord.png');
         const Facebook = require('./images/Facebook.png');
-        const Banner = require('./images/banner.jpg');
         return (
             <div>
                 <div className='homeDiv'>
@@ -35,15 +28,25 @@ class Home extends Component {
                                 <p className='bannertextP'>THE WORLD&#180;S <span className='bannertextSpan'>FIRST AND ONLY</span> INTEROPERABLE BLOCKCHAIN </p>
                                 <p className='bannertextP'>WITH SECURE MULTI-PARTY COMPUTATION</p>
                             </div>
-                            <div id="link" className='videoBtn'>
+                            <div id='link' className='videoBtn'>
                                 <span>WATCH VIDEO</span>
                             </div>
                             <div className='bannerShare'>
-                                <a href="https://t.me/WanchainANN" target="_blank"><img src={Telegram} /></a>
-                                <a href="https://www.reddit.com/r/wanchain/" target="_blank"><img src={Reddit} /></a>
-                                <a href="https://twitter.com/wanchain_org" target="_blank"><img src={Twitter} /></a>
-                                <a href="https://discord.gg/3DpeV6W" target="_blank"><img src={Discord} /></a>
-                                <a href="https://www.facebook.com/wanchainfoundation/" target="_blank"><img src={Facebook} /></a>
+                                <a href='https://t.me/WanchainANN' target='_blank'>
+                                    <img src={Telegram} />
+                                </a>
+                                <a href='https://www.reddit.com/r/wanchain/' target='_blank'>
+                                    <img src={Reddit} />
+                                </a>
+                                <a href='https://twitter.com/wanchain_org' target='_blank'>
+                                    <img src={Twitter} />
+                                </a>
+                                <a href='https://discord.gg/3DpeV6W' target='_blank'>
+                                    <img src={Discord} />
+                                </a>
+                                <a href='https://www.facebook.com/wanchainfoundation/' target='_blank'>
+                                    <img src={Facebook} />
+                                </a>
                             </div>
                         </Col>
                     </Row>         

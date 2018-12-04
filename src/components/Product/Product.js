@@ -51,7 +51,7 @@ class Product extends Component {
                                     </ul>
                                     {/* <Content isShow={this.state.pop} isPopFunc={this.popContent} download={this.state.download} /> */}
                                 </div>
-                                <a href="https://github.com/wanchain/go-wanchain/wiki/Wanwallet-2.0-Cross-chain-transactions" className='downloadManual'>
+                                <a href='https://github.com/wanchain/go-wanchain/wiki/Wanwallet-2.0-Cross-chain-transactions' className='downloadManual'>
                                     <img className='banDownL' src={banDownL} /> <span>Instruction manual for cross-chain</span>
                                 </a>
                             </div>
@@ -106,7 +106,7 @@ class Product extends Component {
                                         <span>One of Wanchain's unique features is the ability to issue a new token with privacy protection in mind. Please click the button below to see how to deploy a smart contract with privacy protection</span>
                                     </li>
                                 </ul>
-                                <a target="_blank" href="https://github.com/wanchain/go-wanchain/wiki/How--to-deploy-smart-contracts-on-Wanchain" className='comBtn'>Issue your token</a>
+                                <a target='_blank' href='https://github.com/wanchain/go-wanchain/wiki/How--to-deploy-smart-contracts-on-Wanchain' className='comBtn'>Issue your token</a>
                             </div>
                         </Col>
                     </Row>
@@ -127,7 +127,7 @@ class Product extends Component {
                                         <span>From dates to fees, block heights to amounts, you can track all of this information and more</span>
                                     </li>
                                 </ul>
-                                <a href="https://www.wanscan.org" target="_blank"><button className='comBtn'>wanchain explorer</button></a>
+                                <a href='https://www.wanscan.org' target='_blank'><button className='comBtn'>wanchain explorer</button></a>
                             </div>
                         </Col>
                         <Col xs='6'>
@@ -152,7 +152,7 @@ class Product extends Component {
                                     </li>
                                     <li>
                                         <em><img className='icoCircle2' src={circle} /></em>
-                                        <span>Check <a href="https://github.com/wanchain/go-wanchain/wiki/Using-the-Wanchain-Command-Line-Wallet" target="_blank">here</a> for more information in our Wanchain wallet CLI guide</span>
+                                        <span>Check <a href='https://github.com/wanchain/go-wanchain/wiki/Using-the-Wanchain-Command-Line-Wallet' target='_blank'>here</a> for more information in our Wanchain wallet CLI guide</span>
                                     </li>
                                 </ul>
                                 <div className='downloadBox'>
@@ -162,9 +162,9 @@ class Product extends Component {
                                     </div>
                                     <div className='GwanDload'>
                                         <p>Gwan Download:</p>
-                                        <a href="/download/gwan-windows-amd64-1.0.5-9b532dfe.zip" className='icoWin'><em></em></a>
-                                        <a href="/download/gwan-mac-amd64-1.0.5-9b532dfe.tar.gz" className='icoMac'><em></em></a>
-                                        <a href="/download/gwan-linux-amd64-1.0.5-9b532dfe.tar.gz" className='icoGLINUX'><em></em></a>
+                                        <a href='/download/gwan-windows-amd64-1.0.5-9b532dfe.zip' className='icoWin'><em></em></a>
+                                        <a href='/download/gwan-mac-amd64-1.0.5-9b532dfe.tar.gz' className='icoMac'><em></em></a>
+                                        <a href='/download/gwan-linux-amd64-1.0.5-9b532dfe.tar.gz' className='icoGLINUX'><em></em></a>
                                     </div>
                                 </div>
                             </div>

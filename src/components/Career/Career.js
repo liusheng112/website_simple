@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Content from './content.js';
+import Item from './Item.js';
+import data from './opportunites.js';
 import './Career.scss';
 class Career extends Component {
     render() {
@@ -19,7 +20,21 @@ class Career extends Component {
                         </div>
                     </div>
                 </div>
-                <Content />
+                <div className='content'>
+                    <h2 className='cH2'>
+                        <span className='chsColor'>C</span>
+                        <span>URRENT OPPORTUNITIES</span>
+                    </h2>
+                    <div className='container'>
+                        <ul>
+                            <li style={{ width: '50%'}}><h6>POSITION</h6></li>
+                            <li style={{ width: '20%'}}><h6>LOCATION</h6></li>
+                            <li style={{ width: '20%'}}><h6>NUMBER</h6></li>
+                            <li style={{ width: '10%'}}></li>
+                        </ul>
+                        {data.map((item, index) => <Item key={index} data={item} />)}
+                    </div>
+                </div>
                 <div className='footer'>
                     <div className='fDiv'>
                         <h2>About Us</h2>

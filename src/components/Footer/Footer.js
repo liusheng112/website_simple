@@ -1,28 +1,35 @@
 import React, { Component } from 'react';
 import { Row, Col, Tooltip } from 'reactstrap';
 import './Footer.scss';
-class Footer extends Component {
+class FooterItem extends Component {
     constructor(props) {
         super(props);
-        this.toggle1 = this.toggle1.bind(this);
-        this.toggle2 = this.toggle2.bind(this);
+        this.toggle = this.toggle.bind(this);
         this.state = {
-            tooltipOpen1: false,
-            tooltipOpen2: false,
+            tooltipOpen: false
         };
     }
-    toggle1() {
+
+    toggle() {
         this.setState({
-            tooltipOpen1: !this.tooltip1Open1,
-            tooltipOpen2: this.state.tooltipOpen2
+            tooltipOpen: !this.state.tooltipOpen
         });
     }
-    toggle2() {
-        this.setState({
-            tooltipOpen2: !this.state.tooltipOpen2,
-            tooltipOpen1: this.tooltip1Open1
-        });
+    render() {
+        const er = { width: '120px', height: '140px' };
+        const ercontainer = { background: 'none' };
+        return (
+            <div>
+                <a id='Tooltip'><img src={this.props.img1} /></a>
+                <Tooltip placement="top" style={ercontainer} isOpen={this.state.tooltipOpen} target="Tooltip" toggle={this.toggle}>
+                    <img style={er} src={this.props.img2}></img>
+                </Tooltip>
+                <span>{this.props.name}</span>
+            </div>
+        );
     }
+}
+class Footer extends Component {
     render() {
         const robot1 = require('./images/reddit.png');
         const discord1 = require('./images/discord.png');
@@ -35,9 +42,7 @@ class Footer extends Component {
         const tm = require('./images/tm.png');
         const qqer = require('./images/qqer.png');
         const wechater = require('./images/wecatEn.png');
-        const newsletter=require('./images/Newsletter.png');
-        const er = { width: '120px', height: '140px' };
-        const ercontainer = { background: 'none' };
+        const newsletter = require('./images/Newsletter.png');
         return (
             <div>
                 <div className='back'>
@@ -81,18 +86,10 @@ class Footer extends Component {
                                     <span>weibo</span>
                                 </div>
                                 <div className='item'>
-                                    <a id='Tooltip1'><img src={wechat1} /></a>
-                                    <Tooltip style={ercontainer} placement='top' isOpen={this.state.tooltipOpen1} target='Tooltip1' toggle={this.toggle1}>
-                                        <img style={er} src={wechater}></img>
-                                    </Tooltip>
-                                    <span>wechat</span>
+                                    <FooterItem img1={wechat1} img2={wechater} name='wechat' />
                                 </div>
                                 <div className='item'>
-                                    <a id='Tooltip2'><img src={qq1} /></a>
-                                    <Tooltip style={ercontainer} placement='top' isOpen={this.state.tooltipOpen2} target='Tooltip2' toggle={this.toggle2}>
-                                        <img style={er} src={qqer}></img>
-                                    </Tooltip>
-                                    <span>QQgroup</span>
+                                    <FooterItem img1={qq1} img2={qqer} name='QQgroup' />
                                 </div>
                                 <div className='item'>
                                     <a href='https://github.com/wanchain' target='_blank'>
@@ -117,4 +114,5 @@ class Footer extends Component {
         );
     }
 }
+
 export default Footer;
